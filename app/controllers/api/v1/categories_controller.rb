@@ -1,3 +1,5 @@
+require_relative '../../../representers/category_representer.rb'
+
 module Api
     module V1
         class CategoriesController < ApplicationController
