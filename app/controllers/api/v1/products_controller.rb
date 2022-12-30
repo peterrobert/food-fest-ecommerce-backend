@@ -4,12 +4,11 @@ module Api
     module V1
         class ProductsController < ApplicationController
             before_action :set_product, only: %i[update show destroy]
-            # GET /books
+            
             def index
               @products = Product.all
               render json: ProductsRepresenter.new(@products).as_json
             end
-            # POST /book
             def create
               @product = Product.create(product_params)
               if @product.save
@@ -18,16 +17,16 @@ module Api
                 render json: @product.errors, status: :unprocessable_entity
               end
             end
-            # GET /books/:id
+           
             def show
               render json: ProductRepresenter.new(@product).as_json
             end
-            # PUT /books/:id
+
             def update
               @product.update(product_params)
               head :no_content
             end
-            # DELETE /books/:id
+
             def destroy
               @product.destroy
               head :no_content

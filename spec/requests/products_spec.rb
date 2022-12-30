@@ -10,7 +10,7 @@ RSpec.describe "Products", type: :request do
 
     it 'returns products' do
       expect(json).not_to be_empty
-      expect(json.size).to eq(1)
+      expect(json.size).to eq(10)
     end
     it 'returns status code 200' do
       expect(response).to have_http_status(200)

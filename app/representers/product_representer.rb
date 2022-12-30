@@ -11,8 +11,8 @@ class ProductRepresenter
         price: product.price,
         description: product.description,
         image: product.image,
-        category: Category.find(product.id).name,
-        date_added: book.created_at
+        category: Category.find(product.category_id).name,
+        date_added: product.created_at
       }
     end
 
@@ -36,8 +36,8 @@ end
           price: product.price,
           description: product.description,
           image: product.image,
-          category: Category.find(product.id).name,
-          date_added: book.created_at
+          category: Category.find(product.category_id).name,
+          date_added: product.created_at
         }
       end
     end
