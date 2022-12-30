@@ -1,3 +1,5 @@
+require_relative '../../../representers/product_representer.rb'
+
 module Api
     module V1
         class ProductsController < ApplicationController
@@ -5,7 +7,7 @@ module Api
             # GET /books
             def index
               @products = Product.all
-              render json: ProductsRepresenter.new( @products ).as_json
+              render json: ProductsRepresenter.new(@products).as_json
             end
             # POST /book
             def create
@@ -34,7 +36,7 @@ module Api
             private
 
             def product_params
-              params.permit(:title, :price, :description :image :category_id)
+              params.permit(:title, :price, :description, :image, :category_id)
             end
 
             def set_product

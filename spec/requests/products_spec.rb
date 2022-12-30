@@ -2,14 +2,15 @@ require 'rails_helper'
 
 RSpec.describe "Products", type: :request do
 
-  let!(:products) { create_list(:product, 5) }
+  let!(:products) { create_list(:product, 10) }
   let!(:product_id) { products.first.id }
 
   describe 'GET /products' do
     before { get '/api/v1/products' }
+
     it 'returns products' do
       expect(json).not_to be_empty
-      expect(json.size).to eq(10)
+      expect(json.size).to eq(1)
     end
     it 'returns status code 200' do
       expect(response).to have_http_status(200)
