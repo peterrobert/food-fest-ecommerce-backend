@@ -1,24 +1,70 @@
-# README
+# FOOD FEST ECOMMERCE APPLICATION API
+> This is the API apllication for an ecommerce application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Ruby 2.7.2
+- Ruby on rails 7.0.0
+- VS Code
+- Postgresql database
 
-* System dependencies
+## How to Install
 
-* Configuration
+- Install Ruby in your system. To install Ruby, you can read the [Documentation](https://www.ruby-lang.org/en/documentation/installation/)
+- Install rails to do that run this command in your console
+    ``` 
+    gem install rails
 
-* Database creation
+    ``` 
+- Then For Windows users, open Command Prompt and run:
+    ```console
+    C:\>cd Hotel_Booking_system folder
+    C:\cd Hotel_Booking_system folder> run rails server
+    ```
+- Open another terminal or Command line and run:  
 
-* Database initialization
+  ```
+    $ rails db:create
+    $ rails db:migrate
+    
+    ``` 
+- For Linux and Mac users, open a Terminal and run:
+    ```console
+    
+    $ cd Hotel_Booking_system  folder
+    $ rails db:create
+    $ rails db:migrate
 
-* How to run the test suite
+    ``` 
+- Navigate to your browser and run
+ 
+   ```
+   localhost:3000
 
-* Services (job queues, cache servers, search engines, etc.)
+   ```
+- To see the live site check here
 
-* Deployment instructions
+   [Live Demo Link](https://robert-booking-api.herokuapp.com/)
 
-* ...
+
+- To see the admin page
+
+   [Live Demo Link](https://robert-booking-api.herokuapp.com//admin)
+
+
+
+## Authors  ![Hireable](https://img.shields.io/badge/HIREABLE-YES-yellowgreen&?style=for-the-badge)
+
+👤 **Peter Robert**
+
+- Github: [@peterrobert](https://github.com/peterrobert)
+- Twitter: [@ptahwambui93](https://twitter.com/Ptahwambui93)
+- Linkedin: [Peter Robert Ndungu](https://www.linkedin.com/in/peter-rob-ndungu/)
+
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!. Feel free to check the [issues page](issues/).
+
+## Show your support
