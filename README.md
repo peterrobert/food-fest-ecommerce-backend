@@ -19,22 +19,24 @@
     ``` 
 - Then For Windows users, open Command Prompt and run:
     ```console
-    C:\>cd Hotel_Booking_system folder
-    C:\cd Hotel_Booking_system folder> run rails server
+    C:\>cd food_fest_eccomerce folder
+    C:\cd food_fest_eccomercefolder> run rails server
     ```
 - Open another terminal or Command line and run:  
 
   ```
     $ rails db:create
     $ rails db:migrate
+    $ rails db:seed
     
     ``` 
 - For Linux and Mac users, open a Terminal and run:
     ```console
     
-    $ cd Hotel_Booking_system  folder
+    $ cd food_fest_ecommerce  folder
     $ rails db:create
     $ rails db:migrate
+    4 rails db:seed
 
     ``` 
 - Navigate to your browser and run
@@ -45,12 +47,9 @@
    ```
 - To see the live site check here
 
-   [Live Demo Link](https://robert-booking-api.herokuapp.com/)
-
 
 - To see the admin page
 
-   [Live Demo Link](https://robert-booking-api.herokuapp.com//admin)
 
 
 
