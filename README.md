@@ -27,6 +27,7 @@
   ```
     $ rails db:create
     $ rails db:migrate
+    $ rails db:seed
     
     ``` 
 - For Linux and Mac users, open a Terminal and run:
